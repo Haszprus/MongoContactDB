@@ -1,0 +1,89 @@
+/* általános táblázati dolgok */
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 7px 11px;
+    vertical-align: top;
+    font: 8pt verdana;
+}
+
+th {
+    text-align: right;
+}
+
+thead th {
+    text-align: left;
+}
+
+tr.separator td {
+    border-left: 0px;
+    border-right: 0px;
+}
+
+tr.separator hr {
+    visibility: hidden;
+}
+
+.list-filter {
+    padding: 0.5em;
+    text-align: right;
+}
+
+.list-filter input.number {
+    width: 7em;
+}
+
+.list-filter ul {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-filter ul li {
+    display: inline-block;
+    margin-right: 3em;
+}
+
+/* .list tipusu table */
+.list {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+    -webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
+    -moz-box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
+
+    border: 1px solid #ddd;
+}
+
+.list td:not(:first-child), .list th:not(:first-child) {
+    border-left: 1px solid #ddd;
+}
+
+.list th {
+    background: #eee;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ddd));
+    background: -moz-linear-gradient(top, #fff, #ddd);
+}
+
+.list tr:nth-child(even) td {
+    background: #fefefe;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f5f5f5));
+    background: -moz-linear-gradient(top, #fcfcfc, #f5f5f5);
+}
+
+.list tr:hover td {
+    background: #fee;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fee), to(#fbb));
+    background: -moz-linear-gradient(top, #fee, #fbb);
+}
+
+form .list td:first-child {
+    text-align: right;
+    padding-top: 13px;
+}
+

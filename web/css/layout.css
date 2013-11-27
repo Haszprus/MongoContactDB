@@ -1,0 +1,174 @@
+body {
+    font: 8pt verdana;
+    background: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: steelblue;
+}
+
+#container {
+    background: white;
+    margin: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .04);
+    position: relative;
+    min-height: 550px;
+}
+
+#content {
+    padding: 10px 20px 40px 20px;
+}
+
+header {
+    display: block;
+    position: relative;
+    min-height: 37px;
+    padding: 0px 15px 0px 15px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .04);
+}
+
+header h1 a {
+    display: block;
+    float: left;
+    color: steelblue;
+    text-decoration: none;
+    padding-top: 7px;
+}
+
+footer {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+    margin-top: 20px;
+    text-align: right;
+    padding: 10px 0px;
+    background: #eee;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+}
+
+footer, footer a {
+    color: silver;
+}
+
+footer a {
+    padding-right: 10px;
+}
+
+#notifications {
+    position: absolute;
+    bottom: 0px;
+    left: 200px;
+    z-index: 100;
+}
+
+#notifications, #menu>ul {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu>ul {
+    clear: both;
+}
+
+#notifications li {
+    float: left;
+    position: relative;
+}
+
+#notifications>li>a {
+    display: block;
+    padding: 5px 15px 0px 15px;
+    height: 22px;
+    color: black;
+}
+
+#notifications li:hover {
+    background: #ccc;
+    background: -webkit-gradient(linear, left top, left bottom, from(#aaa), to(#ddd));
+    background: -moz-linear-gradient(top, #aaa, #ddd);
+}
+
+#notifications li>div {
+    display: none;
+}
+
+#notifications li:hover>div {
+    display: block;
+    position: absolute;
+    top: 26px;
+
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, .04);
+    -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, .04);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .04);
+
+    overflow: visible;
+
+    border: 1px solid #ddd;
+    border-top: 1px solid #aaa;
+
+    z-index: 999;
+}
+
+#notifications li:hover>div>div {
+    background: rgba(255, 255, 255, 0.90);
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(rgba(245, 245, 245, 0.90)));
+    background: -moz-linear-gradient(top, #fff, rgba(245, 245, 245, 0.90));
+
+    padding: 10px 0px;
+
+    min-width: 100px;
+    white-space: nowrap;
+    max-width: 500px;
+    overflow: auto;
+
+}
+
+#notifications li:hover>div>div>p {
+    padding: 0px 15px;
+}
+
+#notifications div a, #menu>ul>li>a {
+    display: block;
+    padding: 4px 15px;
+    color: black;
+}
+
+#notifications div a:hover, #menu>ul>li>a:hover {
+    background: rgba(0, 0, 0, 0.2);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.3)));
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.3));
+
+    border-left: 5px solid steelblue;
+    padding-left: 10px;
+    color: black;
+}
+
+.error {
+    color: maroon;
+}
+
+.error pre {
+    opacity: 0.9;
+}
+
+td input:not([type]), td select, td textarea {
+    width: 300px;
+}
+
+#contacts_edit ul, #contacts_new ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#contacts_edit li, #contacts_new li {
+    margin: 0;
+}
+
