@@ -18,7 +18,7 @@ class Dispatcher
             }
 
             $controllerName = $paths[0] . 'Controller';
-            $actionName = strtoupper($paths[1][0]) . substr($paths[1], 1);
+            $actionName = isset($paths[1]) ? ucfirst($paths) : "Default";
             $executeActionName = 'execute' . $actionName;
 
             /** @var $controller Controller */
